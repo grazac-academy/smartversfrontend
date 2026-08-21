@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Desktop Actions */}
         <div className="navbar-actions">
           <a href="#signin" className="nav-btn-signin">Sign in</a>
-          <a href="#calculate" className="nav-btn-primary">Build for free</a>
+          <a href="#calculate" className="nav-btn-primary">Start for free</a>
         </div>
 
         {/* Mobile Hamburger Button */}

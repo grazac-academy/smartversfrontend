@@ -14,72 +14,75 @@ export default function Hero() {
 
   return (
     <section className="hero-section" id="home">
-      {/* Background Perspective Grid from src/images/grid.png */}
+      {/* Background Perspective Grid */}
       <div className="hero-grid-wrapper" aria-hidden="true">
         <img src={gridImg} alt="" className="hero-grid-image" />
       </div>
 
       <div className="hero-container">
-        <div className="hero-content">
-          {/* Main Headline */}
-          <h1 className="hero-title">
-            Size your solar <span className="text-highlight">Right, First Time.</span>
-          </h1>
+        {/* Top 2-Column Row */}
+        <div className="hero-main-grid">
+          <div className="hero-content">
+            {/* Main Headline */}
+            <h1 className="hero-title">
+              Size your solar <span className="text-highlight">Right, First Time.</span>
+            </h1>
 
-          {/* Subtitle / Description */}
-          <p className="hero-description">
-            Add your appliances, set your usage hours and get the right inverter, battery, and solar panel size in under 3 minutes. No technical knowledge needed.
-          </p>
-
-          {/* Call to Action Button */}
-          <div className="hero-cta-wrapper">
-            <a href="#calculate" className="hero-cta-btn">
-              Calculate my Solar size
-            </a>
-          </div>
-
-          {/* 3 Metric Stats */}
-          <div className="hero-metrics">
-            <div className="metric-item">
-              <span className="metric-value">3 min</span>
-              <span className="metric-label">Average time to result</span>
-            </div>
-            <div className="metric-divider" aria-hidden="true"></div>
-            <div className="metric-item">
-              <span className="metric-value">99%</span>
-              <span className="metric-label">Calculation accuracy</span>
-            </div>
-            <div className="metric-divider" aria-hidden="true"></div>
-            <div className="metric-item">
-              <span className="metric-value">₦0</span>
-              <span className="metric-label">No charges</span>
-            </div>
-          </div>
-
-          {/* Social Proof Locations */}
-          <div className="hero-social-proof">
-            <p className="social-proof-text">
-              Used by homeowners, shop owners &amp; installers across
+            {/* Subtitle / Description */}
+            <p className="hero-description">
+              Add your appliances, set your usage hours and get the right inverter, battery, and solar panel size in under 3 minutes. No technical knowledge needed.
             </p>
-            <div className="location-tags">
-              {locations.map((loc, idx) => (
-                <span key={idx} className="location-pill">
-                  {loc}
-                </span>
-              ))}
+
+            {/* Call to Action Button */}
+            <div className="hero-cta-wrapper">
+              <a href="#calculate" className="hero-cta-btn">
+                Calculate my Solar size
+              </a>
+            </div>
+
+            {/* 3 Metric Stats */}
+            <div className="hero-metrics">
+              <div className="metric-item">
+                <span className="metric-value">3 min</span>
+                <span className="metric-label">Average time to result</span>
+              </div>
+              <div className="metric-divider" aria-hidden="true"></div>
+              <div className="metric-item">
+                <span className="metric-value">99%</span>
+                <span className="metric-label">Calculation accuracy</span>
+              </div>
+              <div className="metric-divider" aria-hidden="true"></div>
+              <div className="metric-item">
+                <span className="metric-value">₦0</span>
+                <span className="metric-label">No charges</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Hero Visual Media */}
+          <div className="hero-visual">
+            <div className="hero-image-wrapper">
+              <img
+                src={heroImage}
+                alt="SmartVert solar sizing mobile app with home solar setup"
+                className="hero-image"
+                loading="eager"
+              />
             </div>
           </div>
         </div>
 
-        {/* Hero Visual Media */}
-        <div className="hero-visual">
-          <div className="hero-image-wrapper">
-            <img
-              src={heroImage}
-              alt="SmartVert solar sizing mobile app with home solar setup"
-              className="hero-image"
-              loading="eager"
-            />
+        {/* Full-width Horizontal Social Proof & Locations Row */}
+        <div className="hero-social-proof">
+          <span className="social-proof-text">
+            USED BY HOMEOWNERS, SHOP OWNERS &amp; INSTALLERS ACROSS
+          </span>
+          <div className="location-tags">
+            {locations.map((loc, idx) => (
+              <span key={idx} className="location-item">
+                {loc}
+              </span>
+            ))}
           </div>
         </div>
       </div>
