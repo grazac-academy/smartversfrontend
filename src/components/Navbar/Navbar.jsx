@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Navbar.css';
 import logoSvg from '../../images/Logo.svg';
+import hamburgerSvg from '../../icons/ci_hamburger-md.svg';
+import closeSvg from '../../icons/iconamoon_close.svg';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,17 +29,21 @@ export default function Navbar() {
           <a href="#calculate" className="nav-btn-primary">Start for free</a>
         </div>
 
-        {/* Mobile Hamburger Button */}
+        {/* Mobile Hamburger / Close Button */}
         <button
           type="button"
-          className={`navbar-hamburger ${mobileMenuOpen ? 'open' : ''}`}
+          className="navbar-hamburger"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle navigation menu"
+          aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Toggle navigation menu'}
           aria-expanded={mobileMenuOpen}
         >
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
-          <span className="hamburger-line"></span>
+          <img
+            src={mobileMenuOpen ? closeSvg : hamburgerSvg}
+            alt=""
+            className="hamburger-icon-img"
+            width="24"
+            height="24"
+          />
         </button>
       </nav>
 
@@ -52,7 +58,7 @@ export default function Navbar() {
           </div>
           <div className="mobile-actions">
             <a href="#signin" className="mobile-btn-signin" onClick={() => setMobileMenuOpen(false)}>Sign in</a>
-            <a href="#calculate" className="mobile-btn-primary" onClick={() => setMobileMenuOpen(false)}>Build for free</a>
+            <a href="#calculate" className="mobile-btn-primary" onClick={() => setMobileMenuOpen(false)}>Start for free</a>
           </div>
         </div>
       )}

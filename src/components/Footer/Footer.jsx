@@ -23,17 +23,17 @@ export default function Footer() {
             {/* Social Links */}
             <div className="footer-socials">
               {/* X / Twitter */}
-              <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="SmartVert on X">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="SmartVert on X">
                 <img src={xIconSvg} alt="X (Twitter)" className="social-icon-img" width="18" height="18" />
               </a>
 
               {/* Instagram */}
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="SmartVert on Instagram">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="SmartVert on Instagram">
                 <img src={instagramIconSvg} alt="Instagram" className="social-icon-img" width="18" height="18" />
               </a>
 
               {/* LinkedIn */}
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="SmartVert on LinkedIn">
+              <a href="#" target="_blank" rel="noopener noreferrer" className="social-icon-btn" aria-label="SmartVert on LinkedIn">
                 <img src={linkedinIconSvg} alt="LinkedIn" className="social-icon-img" width="18" height="18" />
               </a>
             </div>
