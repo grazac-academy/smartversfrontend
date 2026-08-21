@@ -77,9 +77,10 @@
   flex-shrink: 0;
 }
 
-.feature-emoji {
-  font-size: 22px;
-  line-height: 1;
+.feature-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .feature-text-content {

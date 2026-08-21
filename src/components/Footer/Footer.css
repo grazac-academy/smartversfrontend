@@ -32,15 +32,12 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-family: var(--font-family-montserrat, 'Montserrat', sans-serif);
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: -0.5px;
 }
 
-.footer-logo .brand-smart,
-.footer-logo .brand-vert {
-  color: #FFFFFF;
+.footer-logo-img {
+  height: 28px;
+  width: auto;
+  display: block;
 }
 
 .footer-bio {
@@ -73,9 +70,15 @@
   transition: all 0.25s ease;
 }
 
+.social-icon-img {
+  width: 18px;
+  height: 18px;
+  display: block;
+  object-fit: contain;
+}
+
 .social-icon-btn:hover {
   background-color: var(--color-orange-500, #E87A2D);
-  color: #FFFFFF;
   border-color: var(--color-orange-500, #E87A2D);
   transform: translateY(-2px);
 }

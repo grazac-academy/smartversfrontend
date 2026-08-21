@@ -1,24 +1,27 @@
 import './Problem.css';
-import problemImage from '../../assets/problem-image.png';
+import problemImage from '../../images/Problem_section_image.png';
+import lightningIcon from '../../icons/⚡.png';
+import moneyIcon from '../../icons/💸.png';
+import diceIcon from '../../icons/🎲.png';
 
 export default function Problem() {
   const problems = [
     {
-      icon: '⚡',
+      iconImg: lightningIcon,
       iconBg: '#FFF3E8',
       title: 'Under-sizing',
       description:
         'System trips the moment you run the fridge and fan together. Vendor undersized the quote to make it appear affordable.',
     },
     {
-      icon: '💸',
+      iconImg: moneyIcon,
       iconBg: '#EAF8EE',
       title: 'Over-sizing',
       description:
         'A 5kVA inverter for a 1.2kVA load. Vendor sold you excess capacity and expensive equipment you will never realistically need.',
     },
     {
-      icon: '🎲',
+      iconImg: diceIcon,
       iconBg: '#EEF3FB',
       title: 'Guesswork',
       description:
@@ -61,7 +64,7 @@ export default function Problem() {
                   style={{ backgroundColor: item.iconBg }}
                   aria-hidden="true"
                 >
-                  <span className="problem-emoji">{item.icon}</span>
+                  <img src={item.iconImg} alt="" className="problem-icon-img" width="24" height="24" />
                 </div>
                 <div className="problem-card-content">
                   <h3 className="problem-card-title">{item.title}</h3>

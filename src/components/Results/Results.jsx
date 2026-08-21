@@ -1,9 +1,12 @@
 import './Results.css';
+import lightningIcon from '../../icons/⚡.png';
+import batteryIcon from '../../icons/🔋.png';
+import sunIcon from '../../icons/☀️.png';
 
 export default function Results() {
   const results = [
     {
-      icon: '⚡',
+      iconImg: lightningIcon,
       accentColor: 'orange',
       label: 'Inverter size',
       value: '2.5 kVA',
@@ -13,7 +16,7 @@ export default function Results() {
         'kVA = kilowatt-ampere, a measure of how much power your inverter can deliver at any given moment.',
     },
     {
-      icon: '🔋',
+      iconImg: batteryIcon,
       accentColor: 'green',
       label: 'Battery capacity',
       value: '200Ah / 24V',
@@ -23,7 +26,7 @@ export default function Results() {
         'Ah (Amp-hours) & V (Volts) determine battery energy storage. We calculate usable depth of discharge for battery longevity.',
     },
     {
-      icon: '☀️',
+      iconImg: sunIcon,
       accentColor: 'blue',
       label: 'Solar capacity',
       value: '1.8 kW / 4 × 450W panels',
@@ -52,7 +55,7 @@ export default function Results() {
             <div key={index} className={`result-card card-accent-${item.accentColor}`}>
               <div className="result-card-header">
                 <div className="result-icon-circle" aria-hidden="true">
-                  <span className="result-icon">{item.icon}</span>
+                  <img src={item.iconImg} alt="" className="result-icon-img" width="26" height="26" />
                 </div>
                 <span className="result-label">{item.label}</span>
               </div>

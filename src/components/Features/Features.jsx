@@ -1,23 +1,26 @@
 import './Features.css';
+import lightningIcon from '../../icons/⚡.png';
+import triangleIcon from '../../icons/📐.png';
+import pencilIcon from '../../icons/✏️.png';
 
 export default function Features() {
   const featureList = [
     {
-      icon: '⚡',
+      iconImg: lightningIcon,
       iconBg: '#FFF3E8',
       title: 'Surge-aware',
       description:
         'Fridges, ACs and pumps have a 3–5× startup surge that trips undersized inverters. We factor this in automatically.',
     },
     {
-      icon: '📐',
+      iconImg: triangleIcon,
       iconBg: '#EEF3FB',
       title: '25% safety margin',
       description:
         'Every recommendation includes a 25% headroom buffer so your system isn’t pushed to its limit every day.',
     },
     {
-      icon: '✏️',
+      iconImg: pencilIcon,
       iconBg: '#EAF8EE',
       title: 'Fully editable',
       description:
@@ -52,7 +55,7 @@ export default function Features() {
                 style={{ backgroundColor: item.iconBg }}
                 aria-hidden="true"
               >
-                <span className="feature-emoji">{item.icon}</span>
+                <img src={item.iconImg} alt="" className="feature-icon-img" width="24" height="24" />
               </div>
               <div className="feature-text-content">
                 <h3 className="feature-item-title">{item.title}</h3>

@@ -1,21 +1,24 @@
 import './UseCases.css';
+import houseIcon from '../../icons/🏡.png';
+import storeIcon from '../../icons/🏪.png';
+import wrenchIcon from '../../icons/🔧.png';
 
 export default function UseCases() {
   const useCases = [
     {
-      icon: '🏡',
+      iconImg: houseIcon,
       title: 'Homeowners & renters',
       description:
         'Know what size system your home actually needs before comparing quotes.',
     },
     {
-      icon: '🏪',
+      iconImg: storeIcon,
       title: 'Small businesses',
       description:
         'Size your backup power around the equipment your business relies on most.',
     },
     {
-      icon: '🔧',
+      iconImg: wrenchIcon,
       title: 'Solar installers',
       description:
         'Give customers a clear starting point for discussing their solar system needs.',
@@ -38,7 +41,7 @@ export default function UseCases() {
           {useCases.map((item, index) => (
             <div key={index} className="use-case-card">
               <div className="use-case-icon-box" aria-hidden="true">
-                <span className="use-case-emoji">{item.icon}</span>
+                <img src={item.iconImg} alt="" className="use-case-icon-img" width="32" height="32" />
               </div>
               <h3 className="use-case-title">{item.title}</h3>
               <p className="use-case-desc">{item.description}</p>

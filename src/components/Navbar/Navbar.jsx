@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Navbar.css';
+import logoSvg from '../../images/Logo.svg';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,9 +10,7 @@ export default function Navbar() {
       <nav className="navbar-container" aria-label="Main Navigation">
         {/* Brand Logo */}
         <a href="#" className="navbar-brand" aria-label="SmartVert Home">
-          <span className="brand-smart">Smart</span>
-          <span className="brand-vert">Vert</span>
-          <span className="brand-dot"></span>
+          <img src={logoSvg} alt="SmartVert" className="navbar-logo-img" height="24" />
         </a>
 
         {/* Desktop Navigation Links */}

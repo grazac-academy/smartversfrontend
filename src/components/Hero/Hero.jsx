@@ -1,5 +1,5 @@
 import './Hero.css';
-import heroImage from '../../assets/hero-image.png';
+import heroImage from '../../images/hero_image.png';
 
 export default function Hero() {
   const locations = [

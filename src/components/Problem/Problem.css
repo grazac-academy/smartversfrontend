@@ -114,9 +114,10 @@
   flex-shrink: 0;
 }
 
-.problem-emoji {
-  font-size: 22px;
-  line-height: 1;
+.problem-icon-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .problem-card-content {
