@@ -1,5 +1,7 @@
 import './Hero.css';
 import heroImage from '../../images/hero_image.png';
+import gridLeft from '../../images/Perspective Grid.png';
+import gridRight from '../../images/Perspective Grid-1.png';
 
 export default function Hero() {
   const locations = [
@@ -13,8 +15,11 @@ export default function Hero() {
 
   return (
     <section className="hero-section" id="home">
-      {/* Background Perspective Grid */}
-      <div className="hero-grid-bg" aria-hidden="true"></div>
+      {/* Background Perspective Grid Images from Figma */}
+      <div className="hero-grid-wrapper" aria-hidden="true">
+        <img src={gridLeft} alt="" className="hero-grid-left" />
+        <img src={gridRight} alt="" className="hero-grid-right" />
+      </div>
 
       <div className="hero-container">
         <div className="hero-content">
