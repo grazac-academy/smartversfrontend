@@ -5,39 +5,31 @@
   padding: 60px 0 80px;
 }
 
-/* Perspective Grid Background from Images */
+/* Perspective Grid Background */
 .hero-grid-wrapper {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
   pointer-events: none;
   overflow: hidden;
   z-index: 0;
-  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0.3;
 }
 
-.hero-grid-left {
-  position: absolute;
-  top: -10%;
-  left: -5%;
-  width: 55%;
-  height: 120%;
-  object-fit: contain;
-  object-position: left top;
-}
-
-.hero-grid-right {
-  position: absolute;
-  top: -10%;
-  right: -5%;
-  width: 55%;
-  height: 120%;
-  object-fit: contain;
-  object-position: right top;
+.hero-grid-image {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  opacity: 0.85;
 }
 
 .hero-container {
@@ -227,7 +219,7 @@
   }
 
   .hero-grid-wrapper {
-    opacity: 0.4;
+    opacity: 0.5;
   }
 }
 
