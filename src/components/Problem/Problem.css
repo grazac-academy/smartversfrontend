@@ -1,0 +1,174 @@
+.problem-section {
+  padding: 100px 0;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--color-border-default, #f0f2f5);
+}
+
+.problem-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Header */
+.problem-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-eyebrow {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: var(--color-orange-500, #E87A2D);
+  background-color: #FFF3E8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.problem-title {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: var(--color-navy-900, #0B1A33);
+  margin: 0;
+}
+
+.problem-subtitle {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-navy-700, #3C485C);
+  margin: 0;
+}
+
+/* 2-Column Body */
+.problem-body {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: center;
+  gap: 64px;
+}
+
+.problem-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.problem-image-wrapper {
+  width: 100%;
+  max-width: 520px;
+}
+
+.problem-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 32px rgba(11, 26, 51, 0.08));
+}
+
+/* Problem Cards */
+.problem-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.problem-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 24px 28px;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-default, #E8EEF5);
+  border-radius: 14px;
+  box-shadow: 0 4px 16px rgba(11, 26, 51, 0.03);
+  transition: all 0.25s ease;
+}
+
+.problem-card:hover {
+  transform: translateY(-2px);
+  border-color: #D3DDEB;
+  box-shadow: 0 8px 24px rgba(11, 26, 51, 0.06);
+}
+
+.problem-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.problem-emoji {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.problem-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.problem-card-title {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-navy-900, #0B1A33);
+  margin: 0;
+}
+
+.problem-card-desc {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-navy-700, #3C485C);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .problem-body {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .problem-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .problem-section {
+    padding: 64px 0;
+  }
+
+  .problem-container {
+    padding: 0 20px;
+  }
+
+  .problem-title {
+    font-size: 26px;
+  }
+
+  .problem-card {
+    padding: 18px 20px;
+    gap: 16px;
+  }
+}
