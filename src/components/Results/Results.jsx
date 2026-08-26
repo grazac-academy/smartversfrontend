@@ -38,7 +38,7 @@ export default function Results() {
   ];
 
   return (
-    <section className="results-section">
+    <section className="results-section" id="results">
       <div className="results-container">
         {/* Section Header */}
         <div className="results-header">

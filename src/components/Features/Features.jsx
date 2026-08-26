@@ -29,7 +29,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="features-section" id="features">
+    <section className="features-section">
       <div className="features-container">
         {/* Section Header */}
         <div className="features-header">

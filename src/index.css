@@ -1,132 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --color-orange-500: #E87A2D;
   --color-navy-900: #0B1A33;
   --color-navy-700: #3C485C;
-  --color-black: #000000;
-  --color-gray-900: #333333;
   --color-gray-600: #6B6B6B;
-  --color-gray-400: #B5B5B5;
   --color-gray-100: #F5F5F5;
   --color-white: #FFFFFF;
-  --color-blue-300: #7BAADF;
 
   --font-family-inter: 'Inter', sans-serif;
-  --font-family-jakarta: 'Plus Jakarta Sans', sans-serif;
-  --font-family-montserrat: 'Montserrat', sans-serif;
-
-  --font-weight-regular: 400;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-
-  --font-size-12: 12px;
-  --font-size-13: 13px;
-  --font-size-14: 14px;
-  --font-size-15: 15px;
-  --font-size-16: 16px;
-  --font-size-18: 18px;
-  --font-size-22: 22px;
-  --font-size-24: 24px;
-  --font-size-28: 28px;
-  --font-size-30: 30px;
-  --font-size-34: 34px;
-  --font-size-40: 40px;
-  --font-size-56: 56px;
-
-  --letter-spacing-030: 0.3px;
-  --letter-spacing-055: 0.55px;
-  --letter-spacing-070: 0.7px;
-  --letter-spacing-078: 0.78px;
-
-  --color-brand-primary: var(--color-orange-500);
-
-  --color-text-heading: var(--color-navy-900);
-  --color-text-heading-inverse: var(--color-white);
-  --color-text-subheading: var(--color-navy-700);
-  --color-text-body: var(--color-gray-900);
-  --color-text-body-inverse: var(--color-gray-600);
-  --color-text-muted-inverse: var(--color-gray-400);
-  --color-text-faint-inverse: var(--color-gray-100);
-  --color-text-accent: var(--color-brand-primary);
-  --color-text-link-inverse: var(--color-blue-300);
-  --color-text-on-brand: var(--color-white);
-  --color-text-strong: var(--color-black);
 
   --color-bg-page: var(--color-white);
   --color-bg-section: #F9FAFE;
-  --color-bg-inverse: var(--color-navy-900);
-  --color-bg-brand: var(--color-brand-primary);
 
   --color-border-default: var(--color-gray-100);
-  --color-border-inverse: var(--color-navy-700);
-
-  --font-family-base: var(--font-family-inter);
-  --font-family-heading-alt: var(--font-family-jakarta);
-  --font-family-brand-mark: var(--font-family-montserrat);
-
-  --type-display-size: var(--font-size-56);
-  --type-display-line-height: 62px;
-
-  --type-heading-1-size: var(--font-size-40);
-  --type-heading-1-line-height: 44px;
-
-  --type-heading-2-size: var(--font-size-30);
-  --type-heading-2-line-height: 40px;
-
-  --type-heading-3-size: var(--font-size-24);
-  --type-heading-3-line-height: 32px;
-
-  --type-card-title-size: var(--font-size-16);
-  --type-card-title-line-height: 22px;
-
-  --type-body-lg-size: var(--font-size-16);
-  --type-body-lg-line-height: 22px;
-
-  --type-body-lg-loose-size: var(--font-size-16);
-  --type-body-lg-loose-line-height: 24px;
-
-  --type-body-size: var(--font-size-15);
-  --type-body-line-height: 24.38px;
-
-  --type-body-sm-size: var(--font-size-14);
-  --type-body-sm-line-height: 20.6px;
-
-  --type-caption-size: var(--font-size-13);
-  --type-caption-line-height: 21.13px;
-
-  --type-caption-tight-size: var(--font-size-12);
-  --type-caption-tight-line-height: 19.5px;
-
-  --type-eyebrow-size: var(--font-size-13);
-  --type-eyebrow-line-height: 19.5px;
-
-  --type-stat-value-size: var(--font-size-22);
-  --type-stat-value-line-height: 33px;
-
-  --type-stat-label-size: var(--font-size-12);
-  --type-stat-label-line-height: 18px;
-
-  --type-button-size: var(--font-size-18);
-  --type-button-sm-size: var(--font-size-16);
-
-  --type-nav-link-size: var(--font-size-18);
-  --type-nav-link-line-height: 16px;
-
-  --type-footer-link-size: var(--font-size-14);
-  --type-footer-link-line-height: 20px;
-
-  --type-footer-link-sm-size: var(--font-size-12);
-  --type-footer-link-sm-line-height: 20px;
-
-  --type-logo-nav-size: var(--font-size-34);
-  --type-logo-footer-size: var(--font-size-28);
-
-  --type-letter-spacing-eyebrow: var(--letter-spacing-055);
-  --type-letter-spacing-location-tag: var(--letter-spacing-030);
-  --type-letter-spacing-nav-link: var(--letter-spacing-070);
-  --type-letter-spacing-eyebrow-wide: var(--letter-spacing-078);
 }
+
 
 *,
 *::before,
@@ -136,12 +25,20 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}
+
 body {
   min-height: 100vh;
   margin: 0;
-  font-family: var(--font-family-base);
+  font-family: var(--font-family-inter);
   background: var(--color-bg-page);
-  color: var(--color-text-body);
+  color: #333333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -165,140 +62,4 @@ select {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-.type-display {
-  font-family: var(--font-family-base);
-  font-size: var(--type-display-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-display-line-height);
-  color: var(--color-text-strong);
-}
-
-.type-display-accent {
-  font-family: var(--font-family-base);
-  font-size: var(--type-display-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-display-line-height);
-  color: var(--color-text-accent);
-}
-
-.type-heading-1 {
-  font-family: var(--font-family-base);
-  font-size: var(--type-heading-1-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-heading-1-line-height);
-  color: var(--color-text-heading);
-}
-
-.type-heading-2 {
-  font-family: var(--font-family-base);
-  font-size: var(--type-heading-2-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-heading-2-line-height);
-  color: var(--color-text-heading);
-}
-
-.type-heading-3 {
-  font-family: var(--font-family-heading-alt);
-  font-size: var(--type-heading-3-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-heading-3-line-height);
-  color: var(--color-text-heading);
-}
-
-.type-card-title {
-  font-family: var(--font-family-base);
-  font-size: var(--type-card-title-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-card-title-line-height);
-  color: var(--color-text-heading);
-}
-
-.type-body-lg {
-  font-family: var(--font-family-base);
-  font-size: var(--type-body-lg-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--type-body-lg-line-height);
-  color: var(--color-text-heading);
-}
-
-.type-body {
-  font-family: var(--font-family-base);
-  font-size: var(--type-body-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--type-body-line-height);
-  color: var(--color-text-heading-inverse);
-}
-
-.type-body-sm {
-  font-family: var(--font-family-base);
-  font-size: var(--type-body-sm-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--type-body-sm-line-height);
-  color: var(--color-text-body-inverse);
-}
-
-.type-caption {
-  font-family: var(--font-family-base);
-  font-size: var(--type-caption-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--type-caption-line-height);
-  color: var(--color-text-body);
-}
-
-.type-eyebrow {
-  font-family: var(--font-family-base);
-  font-size: var(--type-eyebrow-size);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--type-eyebrow-line-height);
-  letter-spacing: var(--type-letter-spacing-eyebrow);
-  text-transform: uppercase;
-  color: var(--color-text-accent);
-}
-
-.type-stat-value {
-  font-family: var(--font-family-base);
-  font-size: var(--type-stat-value-size);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--type-stat-value-line-height);
-  color: var(--color-text-strong);
-}
-
-.type-stat-label {
-  font-family: var(--font-family-base);
-  font-size: var(--type-stat-label-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--type-stat-label-line-height);
-  color: var(--color-text-body);
-}
-
-.type-button {
-  font-family: var(--font-family-base);
-  font-size: var(--type-button-size);
-  font-weight: var(--font-weight-semibold);
-  color: var(--color-text-on-brand);
-}
-
-.type-nav-link {
-  font-family: var(--font-family-base);
-  font-size: var(--type-nav-link-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--type-nav-link-line-height);
-  letter-spacing: var(--type-letter-spacing-nav-link);
-  color: var(--color-text-strong);
-}
-
-.type-logo-nav {
-  font-family: var(--font-family-heading-alt);
-  font-size: var(--type-logo-nav-size);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-strong);
-}
-
-.type-logo-footer {
-  font-family: var(--font-family-brand-mark);
-  font-size: var(--type-logo-footer-size);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-text-heading-inverse);
 }

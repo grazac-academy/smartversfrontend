@@ -26,10 +26,11 @@ export default function UseCases() {
   ];
 
   return (
-    <section className="use-cases-section">
+    <section className="use-cases-section" id="features">
       <div className="use-cases-container">
         {/* Section Header */}
         <div className="use-cases-header">
+          <span className="section-eyebrow">FEATURES</span>
           <h2 className="use-cases-title">
             Your power system, made simple.{' '}
             <span className="title-secondary">No electrical expertise required.</span>

@@ -17,16 +17,16 @@ export default function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="navbar-links">
-          <a href="#home" className="nav-link active">Home</a>
+          <a href="#home" className="nav-link">Home</a>
           <a href="#features" className="nav-link">Features</a>
-          <a href="#about" className="nav-link">About</a>
+          <a href="#" className="nav-link" onClick={(e) => e.preventDefault()}>About</a>
           <a href="#how-it-works" className="nav-link">How it works</a>
         </div>
 
         {/* Desktop Actions */}
         <div className="navbar-actions">
           <a href="#signin" className="nav-btn-signin">Sign in</a>
-          <a href="#calculate" className="nav-btn-primary">Start for free</a>
+          <a href="#" className="nav-btn-primary" onClick={(e) => e.preventDefault()}>Start for free</a>
         </div>
 
         {/* Mobile Hamburger / Close Button */}
@@ -53,12 +53,12 @@ export default function Navbar() {
           <div className="mobile-links">
             <a href="#home" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Home</a>
             <a href="#features" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Features</a>
-            <a href="#about" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>About</a>
+            <a href="#" className="mobile-nav-link" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); }}>About</a>
             <a href="#how-it-works" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>How it works</a>
           </div>
           <div className="mobile-actions">
             <a href="#signin" className="mobile-btn-signin" onClick={() => setMobileMenuOpen(false)}>Sign in</a>
-            <a href="#calculate" className="mobile-btn-primary" onClick={() => setMobileMenuOpen(false)}>Start for free</a>
+            <a href="#" className="mobile-btn-primary" onClick={(e) => { e.preventDefault(); setMobileMenuOpen(false); }}>Start for free</a>
           </div>
         </div>
       )}
