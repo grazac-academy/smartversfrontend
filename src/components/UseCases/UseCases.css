@@ -1,0 +1,120 @@
+.use-cases-section {
+  padding: 100px 0;
+  background-color: var(--color-bg-section, #F9FAFE);
+  border-top: 1px solid var(--color-border-default, #f0f2f5);
+}
+
+.use-cases-container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* Header */
+.use-cases-header {
+  text-align: center;
+  max-width: 740px;
+  margin: 0 auto 60px;
+}
+
+.use-cases-title {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: var(--color-navy-900, #0B1A33);
+  margin: 0;
+}
+
+.title-secondary {
+  color: #2D5A9E;
+  display: block;
+}
+
+/* 3 Cards Grid */
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.use-case-card {
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border-default, #E8EEF5);
+  border-radius: 16px;
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  box-shadow: 0 4px 16px rgba(11, 26, 51, 0.03);
+  transition: all 0.25s ease;
+}
+
+.use-case-card:hover {
+  transform: translateY(-4px);
+  border-color: #D3DDEB;
+  box-shadow: 0 12px 28px rgba(11, 26, 51, 0.07);
+}
+
+.use-case-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  background-color: #F8FAFD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.use-case-icon-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.use-case-title {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-navy-900, #0B1A33);
+  margin: 0;
+}
+
+.use-case-desc {
+  font-family: var(--font-family-inter, 'Inter', sans-serif);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-navy-700, #3C485C);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .use-cases-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .use-cases-section {
+    padding: 64px 0;
+  }
+
+  .use-cases-container {
+    padding: 0 20px;
+  }
+
+  .use-cases-title {
+    font-size: 26px;
+  }
+
+  .use-case-card {
+    padding: 24px 20px;
+  }
+}
